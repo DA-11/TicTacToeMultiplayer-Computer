@@ -1,0 +1,320 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(48, 48, 48);
+   
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+ }
+ 
+#video {
+    object-fit: cover;
+   
+}
+
+.music{
+    cursor: pointer;
+    position: fixed;
+    right:30px;
+}
+
+.slash{
+    cursor: pointer;
+    position: fixed;
+    opacity: 1;
+    z-index: 4000;
+    font-size:70px;
+    top:8px;
+    right:40px;
+    color: rgb(44, 196, 216);
+}
+
+#confetti{
+    width: 0;
+    height: 0;
+}
+
+.header{ 
+    align-items: center;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: black;
+    background-color: rgb(44, 196, 216);
+    padding: 10px 20px;
+    border: 1px solid black;
+    box-shadow: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.winnerBoard{
+    opacity: 0;
+    background-color: rgb(44, 196, 216);
+    position: fixed;
+    bottom: 200px;
+    right: 30px;
+    left: 30px;
+    height: 30vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px;
+    transition: all 0.3s;
+}
+
+.heading:hover, .winnerBoard:hover{
+    box-shadow: 10px 10px ;
+}
+
+.restartButton{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 30px;
+}
+
+.restartButton:hover{
+    box-shadow: 8px 8px;
+}
+
+.askForRestart{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: rgba(99, 99, 99, 0.932);
+    border: 1px solid black;
+    box-shadow: 2px 2px;
+    transition: all 0.4s; 
+}
+
+.askForRestart:hover{
+    box-shadow: 10px 10px;
+}
+
+.restartOptions{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10px;
+}
+
+.restartOptionYes, .restartOptionNo{
+    background-color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.restartOptionYes:hover, .restartOptionNo:hover{
+    box-shadow: 4px 4px;
+}
+
+.replyLoader{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+}
+
+.loader{
+    margin-left: 10px;
+}
+
+.game{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 4px;
+    column-gap: 4px;
+    z-index: 3000;
+}
+
+.block{
+    background-color: rgb(55, 201, 226);
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 60px;
+    transition: all 0.3s;
+    color: rgba(0, 0, 0, 0.815);
+    transition: all 0.2s;
+}
+
+.block:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 1px solid black;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom:50px;
+    background-color: rgba(32, 204, 235, 0.979);
+    box-shadow: 10px 10px ;
+    padding: 20px 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px;
+    transition: all 0.3s;
+    margin-top: 10px;
+    cursor: pointer;;
+}
+
+
+
+.footer-message{
+   margin-bottom: 10px;
+}
+
+.footer:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(49, 210, 238);
+    font-size: 20px;
+}
+
+.logo1{
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.findme{
+    margin-bottom: 4px;
+}
+
+@media (max-width:350px){
+    .footer-message{
+        opacity: 0;
+    }
+
+    .footer-message{
+        font-size: 1px;
+    }
+}
+
+@media (max-width:450px){
+    .block{
+        height: 70px;
+        width: 70px;
+    }
+
+    .heading{
+        font-size: 20px;
+    }
+
+    .music{
+        top:83px;
+        right:5px;
+    }
+
+    .slash{
+        top:70px;
+        right: 20px;
+    }
+
+
+}
+
+.information{
+    margin-top: 30px;
+    color: rgb(44, 196, 216);
+    font-size: 24px;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+ 
+}
+
+.loader{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+    border-top-color: rgb(44, 196, 216);
+    animation: loaderAniamtion linear infinite 1s;
+}
+
+@keyframes loaderAniamtion{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.loading-info{
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+@media (max-height:700px) {
+    .footer{
+        bottom: 0px;
+    }
+}
+
+@media (max-height:660px) {
+    .footer{
+       position:static;
+    }
+}
+
+#block0{
+    border-top-left-radius: 20px;
+}
+
+#block2{
+    border-top-right-radius: 20px;
+}
+
+#block6{
+    border-bottom-left-radius: 20px;
+}
+
+#block8{
+    border-bottom-right-radius: 20px;
+}

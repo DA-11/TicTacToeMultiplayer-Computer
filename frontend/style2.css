@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(48, 48, 48);
+   
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+.header{ 
+    align-items: center;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: black;
+    background-color: rgb(219, 206, 88);
+    padding: 10px 20px;
+    border: 1px solid black;
+    box-shadow: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+ }
+ 
+#video {
+    object-fit: cover;
+}
+ 
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom:50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(214, 214, 92);
+    padding: 20px 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+
+
+.footer-message{
+   margin-bottom: 10px;
+}
+
+.footer:hover{
+    background-color: black;
+    box-shadow: 10px 10px ;
+}
+
+.logo1{
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.findme{
+    margin-bottom: 4px;
+}
+
+.choice-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.choice{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: black;
+    color: rgba(241, 241, 107, 0.822);
+    box-shadow: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    transition: all 0.8s;
+}
+
+.choice:hover{
+    box-shadow: 10px 10px;
+    color: black;
+    background-color: rgb(219, 206, 88);
+}

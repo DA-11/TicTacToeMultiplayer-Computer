@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+    <div class="background-video">
+        <video autoplay muted loop id="video">
+            <source src="./videos/bgv2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+     </div>
+    
+    <audio id="backgroundMusic">
+        <source src="music/websiteSong.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="visctoryMusic">
+        <source src="music/winner.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="loserMusic">
+        <source src="music/loser.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="gameTieMusic">
+        <source src="music/tie.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="gameChanceMusic">
+        <source src="music/chance.mp3" type="audio/mpeg">
+    </audio>
+
+    
+
+    <div class="winnerBoard"></div>
+
+    <div class="screen">
+      
+        <canvas id="confetti"></canvas>
+        <div class="header">
+           
+            <div class="heading">
+                TIC TAC TOE
+                
+            </div>
+           
+        </div>
+      
+        <div class="music">
+            <img class="music-icon" src="images/icons8-speaker-50.png">
+            <div class="slash">/</div>
+        </div>
+    
+       <div class="restart">
+            <button class="restartButton">Restart</button>
+        </div>
+
+        <div class="askRestartContainer"></div>
+       
+        <div class="game">
+            <div class="block" id="block0"></div>
+            <div class="block" id="block1"></div>
+            <div class="block" id="block2"></div>
+            <div class="block" id="block3"></div>
+            <div class="block" id="block4"></div>
+            <div class="block" id="block5"></div>
+            <div class="block" id="block6"></div>
+            <div class="block" id="block7"></div>
+            <div class="block" id="block8"></div>
+
+        </div> 
+        
+        <div class="information">
+
+            <div class="loading">
+                
+                <div class="loading-info"></div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="footer-message">Hi There &#128075;  Thanks for checking out this site&#11088; </div>
+            <div class="footer-logos">
+                <div class="findme">Find me On:</div>
+                <a href="https://www.linkedin.com/in/divyansh-acharya-870a661bb/"><img class="logo1" src="images/Daco_368194.png"></a> 
+            </div>
+        </div>
+           
+    </div>
+</body>
+</html>

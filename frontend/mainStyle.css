@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(48, 48, 48);
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+ }
+ 
+#video {
+    object-fit: cover;
+   
+}
+
+.header{ 
+    align-items: center;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 46px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(52, 200, 245);
+    padding: 10px 20px;
+    border: 1px solid black;
+    box-shadow: 4px 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.heading:hover{
+    box-shadow: 10px 10px;
+}
+
+.choice-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.choice{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(52, 200, 245);
+    border: 1px solid black;
+    box-shadow: 4px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.choice:hover{
+    box-shadow: 15px 15px;
+}
+
+.multiplayerChoices{
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.joinroom{
+    margin-right: 40px;
+}
+
+.joinroom, .playOnline{
+    text-align: center;
+    background-color: rgb(52, 200, 245);
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.3s ;
+    border-radius: 10px;
+}
+
+.joinroom:hover, .playOnline:hover{
+    box-shadow: 8px 8px;
+}
+
+.roomInput{
+    margin-top: 18px;
+    display: flex;
+    padding: 5px;
+    
+}
+
+#roomName{
+    flex: 1;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#roomName::placeholder{
+    font-size: 18px;
+    color: black;
+}
+
+#joinRoom{
+    font-size: 18px;
+    background-color: rgb(35, 185, 255);
+    color: black;
+    padding: 5pxpx;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 3px 3px;
+    cursor: pointer;
+    
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+#joinRoom:hover{
+    box-shadow: 8px 8px;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom:10px;
+    background-color: rgb(52, 200, 245);
+    color: black;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px;
+    transition: all 0.3s;
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.footer-message{
+   margin-bottom: 10px;
+}
+
+.footer:hover{
+    background-color: rgba(32, 204, 235, 0.979);
+    box-shadow: 10px 10px ;
+    font-size: 20px;
+    color: black;
+}
+
+.logo1{
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.findme{
+    margin-bottom: 4px;
+}

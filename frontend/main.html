@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href=" mainStyle.css">
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop id="video">
+            <source src="./videos/bgv2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+     </div>
+    
+    <div class="screen">
+        
+        <div class="header">
+           
+            <div class="heading">
+                TIC TAC TOE
+                
+            </div>
+           
+        </div>
+      
+        
+        <div class="choice-container">
+            <div class="choice">
+                <div class="multiplayer">Offline Multiplayer</div>
+            </div>
+          
+            <div class="choice">
+                <div class="onlineMultiplayer">Online Multiplayer</div> 
+            </div>
+
+           
+
+            
+        </div>
+       
+        
+        
+        <div class="footer">
+            <div class="footer-message">Hi There &#128075;  Thanks for checking out this site&#11088; </div>
+            <div class="footer-logos">
+                <div class="findme">Find me On:</div>
+                <a href="https://www.linkedin.com/in/divyansh-acharya-870a661bb/"><img class="logo1" src="images/Daco_368194.png"></a>
+            </div>
+        </div>
+           
+    </div>
+
+    <script>
+        const choiceContainer = document.getElementsByClassName('choice-container')[0];
+        choiceContainer.addEventListener('click', function(event){
+
+            if(event.target && event.target.matches('.multiplayer')){
+                window.location.href = 'landingPage.html'
+            } 
+
+            if(event.target && event.target.matches('.onlineMultiplayer')){
+                choiceContainer.innerHTML += `
+                <div class="multiplayerChoices">
+                <div class="joinroom">Create or Join Room</div>
+                <div class="playOnline">Search and Play online</div>
+                </div>`
+                return;
+            }
+
+            if(event.target && event.target.matches('.joinroom')){
+                window.location = 'http://localhost:3003/'
+            }
+
+            if(event && event.target.matches('.playOnline')){
+                window.location = 'http://localhost:3001/'
+            }
+
+           
+        })
+    </script>
+</body>
+</html>
